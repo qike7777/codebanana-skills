@@ -1,5 +1,7 @@
 # Skill Library
 
+![Skill Library Cover](assets/cover.png)
+
 > A curated library of practical AI skills for research, documents, websites, dashboards, and workflow automation.
 >
 > 22 skills across 5 categories — built for analysts, PMs, marketers, developers, and operators.

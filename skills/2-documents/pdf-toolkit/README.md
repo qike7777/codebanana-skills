@@ -1,44 +1,38 @@
 🛠️ PDF Toolkit
 ==============
 
-![Category](https://img.shields.io/badge/category-Documents-lightgrey)
-
-Full-featured local PDF toolkit: extract text/tables, merge/split/rotate, compress, convert to Word, fill forms, OCR scans, AI summarize & Q&A, images-to-PDF, reorder/delete pages — all locally, no file uploads.
+Merge, split, OCR, fill forms, add watermarks, compress, and convert PDFs — all processed locally.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/2-documents/pdf-toolkit/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/2-documents/pdf-toolkit/SKILL.md
 ```
 
 ## Best For
 
-- Writers
-- Operators
+- Operations teams
 - Legal teams
-- Executives
+- Admins
+- Anyone who handles PDFs regularly
+
+## Input
+
+- PDF files
+- Instructions for the operation you need
 
 ## Output
 
 - Structured output based on your input
 
-## Capabilities
-- Extract text & tables
-- Merge / Split / Rotate
-- Compress PDF
-- PDF to Word
-- Images to PDF
-- Reorder / Delete pages
-- Fill forms (fillable & non-fillable)
-- OCR scanned documents
-- AI summarize & Q&A
-- Password protect & decrypt
-- Watermark
-- Batch processing
+## Example Use Cases
+
+- Merge 10 reports into one PDF with bookmarks
+- Fill in a form PDF with data from a spreadsheet
+- OCR a scanned document and extract the text
 
 ## How It Works
+
 1. Extract: open PDF → extract text/tables → save .txt or .xlsx
 2. Convert: PDF → Word via pdfplumber + python-docx
 3. Compress: choose strategy (gs_ebook default) → report size reduction
@@ -48,18 +42,18 @@ Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/ski
 
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)

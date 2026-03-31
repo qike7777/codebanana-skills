@@ -1,53 +1,55 @@
-🛠️ Portfolio
-============
+🛠️ Portfolio Builder
+====================
 
-![Category](https://img.shields.io/badge/category-Websites%20&%20Apps-lightgrey)
-
-Build a distinctive personal portfolio with your brand identity, project showcase, hover interactions, and responsive layout. Deploys to Vercel.
+Build a personal portfolio with brand identity, project showcase, and interactive animations — deployed to Vercel.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/3-websites-and-apps/portfolio/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/3-websites-and-apps/portfolio/SKILL.md
 ```
 
 ## Best For
 
-- Developers
-- Product managers
-- Founders
 - Designers
+- Developers
+- Freelancers
+- Creatives
+
+## Input
+
+- Your name and role
+- Project list with descriptions
+- Brand preferences
 
 ## Output
 
 - Structured output based on your input
 
-## Capabilities
-- Personal Brand
-- Project Showcase
-- Interactive Design
-- Responsive Layout
-- Vercel Deploy
+## Example Use Cases
+
+- Build a designer portfolio with case studies
+- Create a developer portfolio with project demos
+- Launch a freelance site with contact form
 
 ## How It Works
+
 1. Brief → brand identity → build → preview → deploy
 
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)

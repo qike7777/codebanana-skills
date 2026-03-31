@@ -1,56 +1,57 @@
-🛠️ Write a PRD
-==============
+🛠️ PRD Writer
+=============
 
-![Category](https://img.shields.io/badge/category-Workflow%20&%20Operations-lightgrey)
-
-Writes PRDs, user stories, feature specs, roadmaps, competitive analyses, and OKRs. Produces structured product documentation ready for engineering handoff.
+Describe a feature or product idea — get a structured PRD, user stories, roadmap, and OKRs ready to share with your team.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/5-workflow-and-operations/product-manager/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/5-workflow-and-operations/product-manager/SKILL.md
 ```
 
 ## Best For
 
-- Marketers
-- Content creators
 - Product managers
-- Operators
+- Founders
+- Engineering leads
+- Designers
+
+## Input
+
+- Feature or product description
+- Target users and goals
+- Optional: constraints, success metrics
 
 ## Output
 
 - Structured output based on your input
 
-## Capabilities
-- PRD
-- User Stories
-- Roadmap
-- OKRs
-- Competitive Analysis
-- Feature Spec
+## Example Use Cases
+
+- Turn a rough feature idea into a full PRD in 10 minutes
+- Generate user stories and acceptance criteria for a sprint
+- Create an OKR framework for a new product initiative
 
 ## How It Works
+
 1. PRD: gather context → write requirements → acceptance criteria → handoff doc
 2. Roadmap: collect initiatives → prioritize → build quarterly roadmap
 3. Research: competitive landscape → SWOT → positioning recommendations
 
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)

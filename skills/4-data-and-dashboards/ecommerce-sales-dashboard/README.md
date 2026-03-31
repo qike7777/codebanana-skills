@@ -1,53 +1,54 @@
 🛠️ E-commerce Sales Dashboard
 =============================
 
-![Category](https://img.shields.io/badge/category-Data%20&%20Dashboards-lightgrey)
-
-Analyze sales data with RFM customer segmentation, repeat purchase rates, product performance ranking, and regional breakdown. HTML dashboard output.
+Upload sales data — get RFM customer segments, repurchase rate, top products, regional breakdown, and an HTML dashboard.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/4-data-and-dashboards/ecommerce-sales-dashboard/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/4-data-and-dashboards/ecommerce-sales-dashboard/SKILL.md
 ```
 
 ## Best For
 
-- Analysts
-- Growth teams
+- E-commerce teams
+- Growth analysts
 - Marketing teams
 - Operators
+
+## Input
+
+- Sales or order data CSV
+- Optional: date range, product categories
 
 ## Output
 
 - Structured output based on your input
 
-## Capabilities
-- RFM Segmentation
-- Repeat Purchase Rate
-- Product Ranking
-- Regional Analysis
-- HTML Dashboard
+## Example Use Cases
+
+- Segment customers by RFM and identify your top 20%
+- Build a monthly sales report with product and region breakdown
+- Track repurchase rate and LTV trends over time
 
 ## How It Works
+
 1. Upload sales CSV → analyze → generate HTML dashboard
 
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)

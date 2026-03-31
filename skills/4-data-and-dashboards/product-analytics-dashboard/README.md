@@ -1,53 +1,54 @@
 🛠️ Product Analytics Dashboard
 ==============================
 
-![Category](https://img.shields.io/badge/category-Data%20&%20Dashboards-lightgrey)
-
-Analyze product usage data. Builds retention heatmaps, conversion funnels, anomaly alerts, and WoW/MoM comparisons. HTML dashboard output.
+Upload product data — get retention heatmap, conversion funnel, anomaly alerts, and WoW/MoM comparisons in an HTML dashboard.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/4-data-and-dashboards/product-analytics-dashboard/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/4-data-and-dashboards/product-analytics-dashboard/SKILL.md
 ```
 
 ## Best For
 
-- Analysts
+- Product managers
+- Data analysts
 - Growth teams
-- Marketing teams
-- Operators
+- Product-led companies
+
+## Input
+
+- Product usage data CSV (events, sessions, users)
+- Optional: cohorts, date range
 
 ## Output
 
 - Structured output based on your input
 
-## Capabilities
-- Retention Heatmap
-- Conversion Funnel
-- Anomaly Detection
-- WoW/MoM Comparison
-- HTML Dashboard
+## Example Use Cases
+
+- Visualize 30-day retention by cohort in a heatmap
+- Build a conversion funnel and find the biggest drop-off point
+- Get weekly anomaly alerts for key product metrics
 
 ## How It Works
+
 1. Upload analytics CSV → analyze → generate HTML dashboard
 
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)

@@ -1,53 +1,54 @@
 🛠️ Ad Performance Dashboard
 ===========================
 
-![Category](https://img.shields.io/badge/category-Data%20&%20Dashboards-lightgrey)
-
-Analyze ad spend and performance data. Detects CPA anomalies, compares WoW, ranks campaigns, and generates a visual HTML dashboard. Auto-updates daily.
+Upload ad data CSV — get CPA anomaly detection, week-over-week comparison, campaign rankings, and an HTML dashboard.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/4-data-and-dashboards/ad-performance-report/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/4-data-and-dashboards/ad-performance-report/SKILL.md
 ```
 
 ## Best For
 
-- Analysts
+- Performance marketers
 - Growth teams
-- Marketing teams
-- Operators
+- Media buyers
+- Marketing analysts
+
+## Input
+
+- Ad platform data export (CSV)
+- Optional: date range, platform, campaign filters
 
 ## Output
 
 - Structured output based on your input
 
-## Capabilities
-- CPA Anomaly Detection
-- WoW Comparison
-- Campaign Ranking
-- HTML Dashboard
-- Daily Auto-Update
+## Example Use Cases
+
+- Analyze last month's Facebook ad spend and flag underperformers
+- Build a weekly ad performance report for the team
+- Compare campaign CPA across channels in one view
 
 ## How It Works
+
 1. Upload CSV → analyze → generate HTML dashboard → schedule daily refresh
 
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)

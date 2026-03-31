@@ -1,55 +1,57 @@
 🛠️ Launch a Blog
 ================
 
-![Category](https://img.shields.io/badge/category-Websites%20&%20Apps-lightgrey)
-
-Creates a complete, personalized blog site using the Noteworthy theme. Guides you through configuration, content generation, preview, and deployment.
+Go from zero to a live, SEO-ready blog with generated content — built on Next.js and deployed to Vercel.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/3-websites-and-apps/blog-creation/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/3-websites-and-apps/blog-creation/SKILL.md
 ```
 
 ## Best For
 
-- Developers
-- Product managers
 - Founders
-- Designers
+- Content teams
+- Marketers
+- Developers
+
+## Input
+
+- Blog topic or niche
+- Brand name and tone
+- Optional: initial post ideas
 
 ## Output
 
 - Structured output based on your input
 
-## Capabilities
-- Blog
-- Content Writing
-- SEO
-- Markdown
-- Next.js
+## Example Use Cases
+
+- Launch a company blog with 5 starter posts
+- Set up a personal blog with SEO configuration
+- Build a content hub with categories and RSS feed
 
 ## How It Works
+
 1. Setup: configure theme → customize brand → deploy to Vercel
 2. Write: topic → outline → full post → SEO optimize → publish
 3. Maintain: update content → add posts → rebuild
 
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)

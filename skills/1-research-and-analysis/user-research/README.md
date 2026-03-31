@@ -1,24 +1,26 @@
-🎯 User Research
-================
+🎯 User Research Synthesizer
+============================
 
-![Category](https://img.shields.io/badge/category-Research%20&%20Analysis-lightgrey)
-
-Plan and run user research projects. Generates interview guides, usability test scripts, surveys, affinity maps, personas, and journey maps. Delivers a Markdown insights report + Excel summary.
+Turn interviews, surveys, and notes into personas, journey maps, affinity maps, and an insight report.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/1-research-and-analysis/user-research/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/1-research-and-analysis/user-research/SKILL.md
 ```
 
 ## Best For
 
-- Researchers
-- Analysts
-- Strategists
-- Consultants
+- UX researchers
+- Product managers
+- Designers
+- Customer success teams
+
+## Input
+
+- Interview transcripts
+- Survey responses
+- User notes or feedback
 
 ## Output
 
@@ -26,20 +28,26 @@ Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/ski
 - Markdown insights report
 - Excel summary
 
+## Example Use Cases
+
+- Synthesize 10 user interviews into themes and personas
+- Build a customer journey map from support ticket data
+- Generate a usability findings report from session notes
+
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)

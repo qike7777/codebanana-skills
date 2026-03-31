@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Library — 22 AI Skills for Research, Docs, Dashboards & Workflows</title>
+<meta name="description" content="A free, open-source library of 22 AI skills for research, documents, websites, dashboards, and workflow automation. Works with Claude, ChatGPT, and any AI workspace.">
+<meta property="og:title" content="Skill Library — 22 AI Skills">
+<meta property="og:description" content="Free, open-source AI skills for research, PRDs, dashboards, landing pages, and workflow automation.">
+<meta property="og:image" content="https://raw.githubusercontent.com/qike7777/skill-library/main/assets/cover.png">
+<meta property="og:url" content="https://qike7777.github.io/skill-library">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0d1117; --bg2: #161b22; --bg3: #21262d;
+    --border: #30363d; --text: #e6edf3; --muted: #8b949e;
+    --blue: #58a6ff; --green: #3fb950; --purple: #bc8cff;
+    --orange: #f0883e; --pink: #ff7b72;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+  /* NAV */
+  nav { position: sticky; top: 0; z-index: 100; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .nav-brand { font-weight: 700; font-size: 16px; display: flex; align-items: center; gap: 8px; }
+  .nav-links { display: flex; gap: 4px; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 13px; padding: 6px 12px; border-radius: 6px; transition: all 0.15s; }
+  .nav-links a:hover { color: var(--text); background: var(--bg3); }
+  .nav-cta { background: var(--blue); color: #0d1117; font-weight: 600; font-size: 13px; padding: 7px 16px; border-radius: 6px; text-decoration: none; transition: opacity 0.15s; }
+  .nav-cta:hover { opacity: 0.85; }
+
+  /* HERO */
+  .hero { text-align: center; padding: 80px 24px 60px; max-width: 760px; margin: 0 auto; }
+  .hero-badges { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+  .badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 1px solid; }
+  .badge-blue { background: #1f6feb20; border-color: #1f6feb50; color: var(--blue); }
+  .badge-green { background: #3fb95020; border-color: #3fb95050; color: var(--green); }
+  .badge-purple { background: #bc8cff20; border-color: #bc8cff50; color: var(--purple); }
+  .badge-orange { background: #f0883e20; border-color: #f0883e50; color: var(--orange); }
+  .hero h1 { font-size: clamp(32px, 6vw, 52px); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 20px; }
+  .hero h1 span { background: linear-gradient(135deg, #58a6ff, #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .hero p { font-size: 18px; color: var(--muted); max-width: 560px; margin: 0 auto 32px; }
+  .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { background: var(--blue); color: #0d1117; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 8px; text-decoration: none; transition: opacity 0.15s; display: inline-flex; align-items: center; gap: 8px; }
+  .btn-primary:hover { opacity: 0.85; }
+  .btn-secondary { background: var(--bg3); color: var(--text); font-weight: 600; font-size: 15px; padding: 12px 28px; border-radius: 8px; text-decoration: none; border: 1px solid var(--border); transition: border-color 0.15s; display: inline-flex; align-items: center; gap: 8px; }
+  .btn-secondary:hover { border-color: var(--blue); color: var(--blue); }
+
+  /* STATS */
+  .stats { display: flex; justify-content: center; gap: 48px; padding: 40px 24px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg2); flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat-num { font-size: 36px; font-weight: 800; color: var(--blue); }
+  .stat-label { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+  /* FEATURED */
+  .section { max-width: 1100px; margin: 0 auto; padding: 60px 24px; }
+  .section-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 28px; }
+  .section-title { font-size: 22px; font-weight: 700; }
+  .section-sub { font-size: 14px; color: var(--muted); }
+
+  .featured-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .skill-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-decoration: none; color: var(--text); transition: all 0.2s; display: block; }
+  .skill-card:hover { border-color: var(--blue); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(88,166,255,0.1); }
+  .skill-card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
+  .skill-emoji { font-size: 28px; line-height: 1; }
+  .skill-cat-badge { font-size: 11px; color: var(--muted); background: var(--bg3); padding: 3px 8px; border-radius: 4px; }
+  .skill-name { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .skill-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* CATEGORIES */
+  .cat-tabs { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+  .cat-tab { padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; cursor: pointer; border: 1px solid var(--border); color: var(--muted); background: transparent; transition: all 0.15s; }
+  .cat-tab:hover, .cat-tab.active { background: var(--blue); border-color: var(--blue); color: #0d1117; }
+
+  .all-skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+  .skill-row { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; text-decoration: none; color: var(--text); transition: all 0.15s; display: flex; align-items: flex-start; gap: 14px; }
+  .skill-row:hover { border-color: var(--blue); }
+  .skill-row-emoji { font-size: 22px; flex-shrink: 0; }
+  .skill-row-body {}
+  .skill-row-name { font-size: 14px; font-weight: 600; margin-bottom: 3px; }
+  .skill-row-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  /* HOW TO USE */
+  .how-section { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 60px 24px; }
+  .how-inner { max-width: 800px; margin: 0 auto; }
+  .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; margin-top: 32px; }
+  .how-step { text-align: center; }
+  .how-step-num { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #1f6feb, #bc8cff); color: white; font-weight: 800; font-size: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+  .how-step-title { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .how-step-desc { font-size: 13px; color: var(--muted); }
+
+  /* FOOTER */
+  footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+  footer a { color: var(--blue); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .stats { gap: 32px; }
+    .hero { padding: 48px 16px 40px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">📚 Skill Library</div>
+  <div class="nav-links">
+    <a href="#skills">Skills</a>
+    <a href="#how">How to Use</a>
+    <a href="https://github.com/qike7777/skill-library" target="_blank">GitHub</a>
+  </div>
+  <a class="nav-cta" href="https://github.com/qike7777/skill-library" target="_blank">⭐ Star on GitHub</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-badges">
+    <span class="badge badge-blue">22 Skills</span>
+    <span class="badge badge-green">Open Source</span>
+    <span class="badge badge-purple">Works with Claude</span>
+    <span class="badge badge-orange">Works with ChatGPT</span>
+  </div>
+  <h1>AI Skills for <span>Real Work</span></h1>
+  <p>22 ready-to-use skills for research, documents, websites, dashboards, and workflow automation. Drop one in, get structured output — every time.</p>
+  <div class="hero-actions">
+    <a class="btn-primary" href="https://github.com/qike7777/skill-library" target="_blank">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      Browse on GitHub
+    </a>
+    <a class="btn-secondary" href="#skills">See All Skills ↓</a>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">22</div><div class="stat-label">Skills</div></div>
+  <div class="stat"><div class="stat-num">5</div><div class="stat-label">Categories</div></div>
+  <div class="stat"><div class="stat-num">2</div><div class="stat-label">AI Platforms</div></div>
+  <div class="stat"><div class="stat-num">Free</div><div class="stat-label">Forever</div></div>
+</div>
+
+<!-- FEATURED -->
+<section class="section">
+  <div class="section-header">
+    <div class="section-title">⭐ Most Popular</div>
+    <div class="section-sub">Start with these</div>
+  </div>
+  <div class="featured-grid">
+    <a class="skill-card" href="https://github.com/qike7777/skill-library/tree/main/skills/1-research-and-analysis/competitive-analysis" target="_blank">
+      <div class="skill-card-top"><div class="skill-emoji">🔍</div><span class="skill-cat-badge">Research</span></div>
+      <div class="skill-name">Competitor Analysis</div>
+      <div class="skill-desc">Turn competitor names into a full intelligence report — SWOT, positioning map, feature matrix, pricing analysis.</div>
+    </a>
+    <a class="skill-card" href="https://github.com/qike7777/skill-library/tree/main/skills/5-workflow-and-operations/product-manager" target="_blank">
+      <div class="skill-card-top"><div class="skill-emoji">📋</div><span class="skill-cat-badge">Workflows</span></div>
+      <div class="skill-name">PRD Writer</div>
+      <div class="skill-desc">Rough product idea → structured PRD + user stories + OKRs + roadmap. Ready to share in 10 minutes.</div>
+    </a>
+    <a class="skill-card" href="https://github.com/qike7777/skill-library/tree/main/skills/3-websites-and-apps/landing-page" target="_blank">
+      <div class="skill-card-top"><div class="skill-emoji">🌐</div><span class="skill-cat-badge">Web & Apps</span></div>
+      <div class="skill-name">Landing Page Generator</div>
+      <div class="skill-desc">Product description → conversion-focused landing page with copy, responsive layout, form, and SEO.</div>
+    </a>
+    <a class="skill-card" href="https://github.com/qike7777/skill-library/tree/main/skills/2-documents/meeting-summary" target="_blank">
+      <div class="skill-card-top"><div class="skill-emoji">📝</div><span class="skill-cat-badge">Documents</span></div>
+      <div class="skill-name">Meeting Notes → Action Items</div>
+      <div class="skill-desc">Paste a transcript → get TL;DR, key decisions, action items, and a Word export in seconds.</div>
+    </a>
+    <a class="skill-card" href="https://github.com/qike7777/skill-library/tree/main/skills/5-workflow-and-operations/email-sequence" target="_blank">
+      <div class="skill-card-top"><div class="skill-emoji">✉️</div><span class="skill-cat-badge">Workflows</span></div>
+      <div class="skill-name">Email Sequence Builder</div>
+      <div class="skill-desc">Target audience + goal → full email sequence with subject lines, body copy, CTAs, and HTML preview.</div>
+    </a>
+    <a class="skill-card" href="https://github.com/qike7777/skill-library/tree/main/skills/2-documents/pdf-toolkit" target="_blank">
+      <div class="skill-card-top"><div class="skill-emoji">📄</div><span class="skill-cat-badge">Documents</span></div>
+      <div class="skill-name">PDF Toolkit</div>
+      <div class="skill-desc">Merge, split, OCR, fill forms, watermark, compress — all processed locally. No upload needed.</div>
+    </a>
+  </div>
+</section>
+
+<!-- ALL SKILLS -->
+<section class="section" id="skills">
+  <div class="section-header">
+    <div class="section-title">📚 All 22 Skills</div>
+  </div>
+  <div class="cat-tabs">
+    <button class="cat-tab active" onclick="filterCat('all', this)">All</button>
+    <button class="cat-tab" onclick="filterCat('research', this)">🔍 Research</button>
+    <button class="cat-tab" onclick="filterCat('documents', this)">📄 Documents</button>
+    <button class="cat-tab" onclick="filterCat('web', this)">🌐 Web & Apps</button>
+    <button class="cat-tab" onclick="filterCat('dashboards', this)">📊 Dashboards</button>
+    <button class="cat-tab" onclick="filterCat('workflows', this)">⚙️ Workflows</button>
+  </div>
+  <div class="all-skills-grid" id="skills-grid">
+    <!-- Research -->
+    <a class="skill-row" data-cat="research" href="https://github.com/qike7777/skill-library/tree/main/skills/1-research-and-analysis/competitive-analysis" target="_blank"><div class="skill-row-emoji">🔍</div><div class="skill-row-body"><div class="skill-row-name">Competitor Analysis</div><div class="skill-row-desc">Research competitors → SWOT + positioning map + feature matrix + Excel export</div></div></a>
+    <a class="skill-row" data-cat="research" href="https://github.com/qike7777/skill-library/tree/main/skills/1-research-and-analysis/financial-analyst" target="_blank"><div class="skill-row-emoji">💰</div><div class="skill-row-body"><div class="skill-row-name">Financial Analysis</div><div class="skill-row-desc">Input financials → model + ratios + scenario analysis + HTML dashboard</div></div></a>
+    <a class="skill-row" data-cat="research" href="https://github.com/qike7777/skill-library/tree/main/skills/1-research-and-analysis/market-research" target="_blank"><div class="skill-row-emoji">📈</div><div class="skill-row-body"><div class="skill-row-name">Market Research Report</div><div class="skill-row-desc">Market name → size + trends + competitive landscape + opportunities</div></div></a>
+    <a class="skill-row" data-cat="research" href="https://github.com/qike7777/skill-library/tree/main/skills/1-research-and-analysis/research-writing" target="_blank"><div class="skill-row-emoji">🔬</div><div class="skill-row-body"><div class="skill-row-name">Deep Research Report</div><div class="skill-row-desc">Topic → publication-quality report with citations + HTML visual output</div></div></a>
+    <a class="skill-row" data-cat="research" href="https://github.com/qike7777/skill-library/tree/main/skills/1-research-and-analysis/user-research" target="_blank"><div class="skill-row-emoji">👥</div><div class="skill-row-body"><div class="skill-row-name">User Research Synthesizer</div><div class="skill-row-desc">Interviews + surveys → personas + journey maps + insight report</div></div></a>
+    <!-- Documents -->
+    <a class="skill-row" data-cat="documents" href="https://github.com/qike7777/skill-library/tree/main/skills/2-documents/contract-drafter" target="_blank"><div class="skill-row-emoji">📃</div><div class="skill-row-body"><div class="skill-row-name">Contract Drafter</div><div class="skill-row-desc">Describe terms → draft contract, NDA, or employment agreement</div></div></a>
+    <a class="skill-row" data-cat="documents" href="https://github.com/qike7777/skill-library/tree/main/skills/2-documents/excel-assistant" target="_blank"><div class="skill-row-emoji">📊</div><div class="skill-row-body"><div class="skill-row-name">Excel Assistant</div><div class="skill-row-desc">Chat to create, edit, or batch-process Excel files with formulas and formatting</div></div></a>
+    <a class="skill-row" data-cat="documents" href="https://github.com/qike7777/skill-library/tree/main/skills/2-documents/meeting-summary" target="_blank"><div class="skill-row-emoji">📝</div><div class="skill-row-body"><div class="skill-row-name">Meeting Notes → Action Items</div><div class="skill-row-desc">Paste transcript → TL;DR + decisions + action items + Word export</div></div></a>
+    <a class="skill-row" data-cat="documents" href="https://github.com/qike7777/skill-library/tree/main/skills/2-documents/pdf-toolkit" target="_blank"><div class="skill-row-emoji">📄</div><div class="skill-row-body"><div class="skill-row-name">PDF Toolkit</div><div class="skill-row-desc">Merge, split, OCR, fill, watermark, compress PDFs — all local</div></div></a>
+    <!-- Web -->
+    <a class="skill-row" data-cat="web" href="https://github.com/qike7777/skill-library/tree/main/skills/3-websites-and-apps/blog-creation" target="_blank"><div class="skill-row-emoji">✍️</div><div class="skill-row-body"><div class="skill-row-name">Launch a Blog</div><div class="skill-row-desc">Next.js blog + content generation + SEO + Vercel deploy</div></div></a>
+    <a class="skill-row" data-cat="web" href="https://github.com/qike7777/skill-library/tree/main/skills/3-websites-and-apps/build-mobile-app" target="_blank"><div class="skill-row-emoji">📱</div><div class="skill-row-body"><div class="skill-row-name">Build a Mobile App</div><div class="skill-row-desc">Design system → React Native app + Expo preview + full TDD workflow</div></div></a>
+    <a class="skill-row" data-cat="web" href="https://github.com/qike7777/skill-library/tree/main/skills/3-websites-and-apps/build-web-app" target="_blank"><div class="skill-row-emoji">💻</div><div class="skill-row-body"><div class="skill-row-name">Build a Web App</div><div class="skill-row-desc">Requirements → full-stack Next.js app + code review + Vercel deploy</div></div></a>
+    <a class="skill-row" data-cat="web" href="https://github.com/qike7777/skill-library/tree/main/skills/3-websites-and-apps/landing-page" target="_blank"><div class="skill-row-emoji">🚀</div><div class="skill-row-body"><div class="skill-row-name">Landing Page Generator</div><div class="skill-row-desc">Product description → conversion-focused page + SEO + form</div></div></a>
+    <a class="skill-row" data-cat="web" href="https://github.com/qike7777/skill-library/tree/main/skills/3-websites-and-apps/portfolio" target="_blank"><div class="skill-row-emoji">🎨</div><div class="skill-row-body"><div class="skill-row-name">Portfolio Builder</div><div class="skill-row-desc">Brand identity + projects → portfolio site with animations + Vercel deploy</div></div></a>
+    <!-- Dashboards -->
+    <a class="skill-row" data-cat="dashboards" href="https://github.com/qike7777/skill-library/tree/main/skills/4-data-and-dashboards/ad-performance-report" target="_blank"><div class="skill-row-emoji">📣</div><div class="skill-row-body"><div class="skill-row-name">Ad Performance Dashboard</div><div class="skill-row-desc">Ad CSV → CPA anomaly detection + WoW comparison + HTML dashboard</div></div></a>
+    <a class="skill-row" data-cat="dashboards" href="https://github.com/qike7777/skill-library/tree/main/skills/4-data-and-dashboards/content-analytics-report" target="_blank"><div class="skill-row-emoji">📰</div><div class="skill-row-body"><div class="skill-row-name">Content Analytics Dashboard</div><div class="skill-row-desc">Content CSV → best post times + engagement analysis + HTML dashboard</div></div></a>
+    <a class="skill-row" data-cat="dashboards" href="https://github.com/qike7777/skill-library/tree/main/skills/4-data-and-dashboards/ecommerce-sales-dashboard" target="_blank"><div class="skill-row-emoji">🛒</div><div class="skill-row-body"><div class="skill-row-name">E-commerce Sales Dashboard</div><div class="skill-row-desc">Sales CSV → RFM segments + repurchase rate + regional map</div></div></a>
+    <a class="skill-row" data-cat="dashboards" href="https://github.com/qike7777/skill-library/tree/main/skills/4-data-and-dashboards/product-analytics-dashboard" target="_blank"><div class="skill-row-emoji">📉</div><div class="skill-row-body"><div class="skill-row-name">Product Analytics Dashboard</div><div class="skill-row-desc">Product data → retention heatmap + funnel + anomaly alerts</div></div></a>
+    <!-- Workflows -->
+    <a class="skill-row" data-cat="workflows" href="https://github.com/qike7777/skill-library/tree/main/skills/5-workflow-and-operations/course-designer" target="_blank"><div class="skill-row-emoji">🎓</div><div class="skill-row-body"><div class="skill-row-name">Course Designer</div><div class="skill-row-desc">Topic → full course outline + lesson plans + quizzes + HTML page</div></div></a>
+    <a class="skill-row" data-cat="workflows" href="https://github.com/qike7777/skill-library/tree/main/skills/5-workflow-and-operations/email-sequence" target="_blank"><div class="skill-row-emoji">✉️</div><div class="skill-row-body"><div class="skill-row-name">Email Sequence Builder</div><div class="skill-row-desc">Audience + goal → subject lines + body copy + CTA + HTML preview</div></div></a>
+    <a class="skill-row" data-cat="workflows" href="https://github.com/qike7777/skill-library/tree/main/skills/5-workflow-and-operations/product-manager" target="_blank"><div class="skill-row-emoji">📋</div><div class="skill-row-body"><div class="skill-row-name">PRD Writer</div><div class="skill-row-desc">Feature idea → structured PRD + user stories + roadmap + OKRs</div></div></a>
+    <a class="skill-row" data-cat="workflows" href="https://github.com/qike7777/skill-library/tree/main/skills/5-workflow-and-operations/social-media-strategist" target="_blank"><div class="skill-row-emoji">📱</div><div class="skill-row-body"><div class="skill-row-name">Social Content Planner</div><div class="skill-row-desc">Topic → multi-platform content + calendar + scripts + strategy report</div></div></a>
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="how-section" id="how">
+  <div class="how-inner">
+    <div style="text-align:center; margin-bottom: 8px;">
+      <div class="section-title">🚀 How to Use</div>
+      <p style="color:var(--muted); font-size:14px; margin-top:8px;">Works with Claude, ChatGPT, and any AI that supports instruction/system files</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <div class="how-step-title">Pick a Skill</div>
+        <div class="how-step-desc">Browse the library and open any skill's README page</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <div class="how-step-title">Copy the Skill URL</div>
+        <div class="how-step-desc">Each README has a raw SKILL.md URL ready to copy</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <div class="how-step-title">Add to Your AI</div>
+        <div class="how-step-desc">Paste as a system instruction or custom instruction in Claude or ChatGPT</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">4</div>
+        <div class="how-step-title">Get Output</div>
+        <div class="how-step-desc">Describe your task or paste your source material — done</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p style="margin-bottom:8px;">
+    <a href="https://github.com/qike7777/skill-library" target="_blank">GitHub</a> · 
+    22 skills · 5 categories · Free & open source
+  </p>
+  <p style="color:#484f58;">Built for analysts, PMs, marketers, developers, and anyone who does repeatable knowledge work.</p>
+</footer>
+
+<script>
+function filterCat(cat, btn) {
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.skill-row').forEach(row => {
+    row.style.display = (cat === 'all' || row.dataset.cat === cat) ? 'flex' : 'none';
+  });
+}
+</script>
+</body>
+</html>

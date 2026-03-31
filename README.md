@@ -2,9 +2,14 @@
 
 ![Skill Library Cover](assets/cover.png)
 
-> A curated library of practical AI skills for research, documents, websites, dashboards, and workflow automation.
->
-> 22 skills across 5 categories — built for analysts, PMs, marketers, developers, and operators.
+[![Skills](https://img.shields.io/badge/skills-22-blue?style=flat-square)](https://github.com/qike7777/skill-library)
+[![Categories](https://img.shields.io/badge/categories-5-purple?style=flat-square)](https://github.com/qike7777/skill-library)
+[![Works with Claude](https://img.shields.io/badge/works%20with-Claude-orange?style=flat-square)](https://claude.ai)
+[![Works with ChatGPT](https://img.shields.io/badge/works%20with-ChatGPT-10a37f?style=flat-square)](https://chat.openai.com)
+[![Open Source](https://img.shields.io/badge/open-source-brightgreen?style=flat-square)](https://github.com/qike7777/skill-library)
+
+> 22 ready-to-use AI skills for research, documents, websites, dashboards, and workflow automation.  
+> Works with Claude, ChatGPT, and any AI workspace that supports skill/instruction files.
 
 ---
 
@@ -94,12 +99,14 @@ Streamline repeatable work — content, courses, strategy, and planning.
 
 ## 🚀 How to Use
 
-Each skill comes with a `SKILL.md` file and an install URL.
+Each skill has a `SKILL.md` with an install URL.
 
-1. Copy the **Skill URL** from the skill's README
-2. Add it to your AI workspace
+1. Open any skill's `README.md` and copy the **Skill URL**
+2. Add it to your AI workspace (Claude, ChatGPT, or any instruction-based AI)
 3. Describe your task or paste your source material
 4. Get structured, ready-to-use output
+
+Or download the `-skill.zip` from any skill folder and extract it directly into your workspace.
 
 ---
 
@@ -108,9 +115,11 @@ Each skill comes with a `SKILL.md` file and an install URL.
 ```
 skill-library/
 ├── README.md
+├── assets/
+│   └── cover.png
 └── skills/
     ├── 1-research-and-analysis/
-    │   ├── competitive-analysis/
+    │   ├── competitive-analysis/   ← SKILL.md + README.md + .zip
     │   ├── financial-analyst/
     │   ├── market-research/
     │   ├── research-writing/
@@ -146,4 +155,4 @@ Found a bug or want to improve a skill? Open an issue or submit a pull request.
 
 ---
 
-*22 skills · 5 categories · Built for practical, repeatable AI workflows*
+*22 skills · 5 categories · Works with Claude, ChatGPT, and any AI workspace*

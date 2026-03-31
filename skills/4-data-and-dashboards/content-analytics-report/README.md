@@ -1,53 +1,54 @@
 🛠️ Content Analytics Dashboard
 ==============================
 
-![Category](https://img.shields.io/badge/category-Data%20&%20Dashboards-lightgrey)
-
-Analyze content performance data. Finds best posting times, top content types, and engagement patterns. Auto-updates weekly. Supports Chinese column names.
+Upload content performance data — get best posting times, content type comparison, engagement rate analysis, and an HTML dashboard.
 
 ## Install
 
-Add this skill to your CodeBanana workspace:
-
 ```
-Skill URL: https://raw.githubusercontent.com/qike7777/codebanana-skills/main/skills/4-data-and-dashboards/content-analytics-report/SKILL.md
+https://raw.githubusercontent.com/qike7777/skill-library/main/skills/4-data-and-dashboards/content-analytics-report/SKILL.md
 ```
 
 ## Best For
 
-- Analysts
+- Content teams
+- Social media managers
 - Growth teams
-- Marketing teams
-- Operators
+- Marketers
+
+## Input
+
+- Content performance CSV (views, engagement, shares)
+- Optional: platform, date range
 
 ## Output
 
 - Structured output based on your input
 
-## Capabilities
-- Posting Time Analysis
-- Engagement Rate
-- Content Type Comparison
-- HTML Dashboard
-- Weekly Auto-Update
+## Example Use Cases
+
+- Find the best days and times to post for maximum reach
+- Compare performance across content formats (video vs. articles)
+- Build a weekly content report with trend analysis
 
 ## How It Works
+
 1. Upload CSV → analyze → generate HTML dashboard → schedule weekly refresh
 
 ## How to Use
 
-1. Install the skill using the Skill URL above
+1. Copy the Skill URL above and add it to your AI workspace
 2. Describe your task or paste your source material
 3. Specify the output format you want
 4. Review and refine the result
 
 ## Tips
 
-- Give clear context for better results
-- Specify the format you want (e.g. "give me a table", "write as bullet points")
-- Include examples when possible
-- Use focused instructions for more reliable output
+- Be specific about your goal for better output
+- Include examples or context when possible
+- Specify format preferences (table, bullets, prose, etc.)
+- For best results, provide relevant source material upfront
 
-## Support
+---
 
-For questions or feedback, open an issue in this repository.
+[← Back to Skill Library](../../../README.md)
